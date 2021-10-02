@@ -1,0 +1,88 @@
+{
+    "name": "UFOVc",
+    "logo": "https://telegra.ph/file/19d68d531fd2f6f96e368.jpg",
+    "description": "UFO Music Voice Chat.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/moazizaa/music",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "• هنا خلي كود تيرمكس  .",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "• هنا خلي توكن بوتك ",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "• هنا خلي اسم حساب المساعد ",
+            "required": false,
+            "value": "MuSic BoT"
+        },
+        "BOT_USERNAME": {
+            "description": "• هنا خلي يوزر بوتك بدون علامه @",
+            "required": true,
+            "value": "Y83BoT"
+        },
+        "ASSISTANT_NAME": {
+            "description": "• هنا حط يوزر بوتك بدون علامه @",
+            "required": true,
+            "value": "Y38BoT"
+        },
+        "BG_IMAGE": {
+            "description": "• هنا خلي رابط صوره اذا تحب تغيره ",
+            "required": false,
+            "value": "https://telegra.ph/file/19d68d531fd2f6f96e368.jpg"
+        },
+        "THUMB_IMG": {
+            "description": "• اذا تحب تغير لصوره خلي رابط صورتك هنا ",
+            "required": false,
+            "value": "https://telegra.ph/file/19d68d531fd2f6f96e368.jpg"
+        },
+        "OWNER_NAME": {
+            "description": "• هنا خلي يوزرك بدون علامه @",
+            "required": false,
+            "value": "VvTVv2"
+        },
+        "API_ID": {
+            "description": "• هنا خلي ايبي ايدي خاص بحساب مساعد ",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "• هنا خلي ايبي هاش خاص بيك تبع حساب مساعد ",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "• هنا خلي ايدي الادمن او مطور لبوت",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "max",
+            "required": true,
+            "value": "60"
+        },
+        "PMPERMIT": {
+            "description": "لاتغيرها او تلعب بيه ",
+            "required": false,
+            "value": "ENABLE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "• هنا خلي قناه السورس مالتك بدون علامه @",
+            "required": false,
+            "value": "nnnnBn"
+        },
+        "GROUP_SUPPORT": {
+            "description": "• هنا حط معرف رابط كروب الدعم ",
+            "required": false,
+            "value": "nnnnBn"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
